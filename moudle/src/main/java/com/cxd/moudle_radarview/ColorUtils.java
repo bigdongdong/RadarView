@@ -1,4 +1,4 @@
-package com.cxd.moudle;
+package com.cxd.moudle_radarview;
 
 import android.graphics.Color;
 

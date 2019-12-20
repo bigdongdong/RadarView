@@ -3,25 +3,14 @@ package com.cxd.radarview;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
-import com.cxd.moudle.CobwebView;
-import com.cxd.moudle.RadarView;
-import com.cxd.moudle.options.CobwebOptions;
-import com.cxd.moudle.options.DataLineOptions;
-import com.cxd.moudle.options.TextOptions;
+import com.cxd.moudle_radarview.RadarView;
+import com.cxd.moudle_radarview.options.CobwebOptions;
+import com.cxd.moudle_radarview.options.DataLineOptions;
+import com.cxd.moudle_radarview.options.TextOptions;
 import com.cxd.radarview.utils.ScreenUtil;
-
-import org.w3c.dom.Text;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {

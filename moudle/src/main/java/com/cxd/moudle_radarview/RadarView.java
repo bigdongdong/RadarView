@@ -1,18 +1,17 @@
-package com.cxd.moudle;
+package com.cxd.moudle_radarview;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Point;
-import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.Shape;
 import android.widget.RelativeLayout;
 
-import com.cxd.moudle.options.CobwebOptions;
-import com.cxd.moudle.options.DataLineOptions;
-import com.cxd.moudle.options.TextOptions;
+import com.cxd.moudle_radarview.options.CobwebOptions;
+import com.cxd.moudle_radarview.options.DataLineOptions;
+import com.cxd.moudle_radarview.options.TextOptions;
 
 import java.util.ArrayList;
 import java.util.List;
