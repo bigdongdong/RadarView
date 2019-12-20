@@ -36,7 +36,7 @@
   }
   
   dependencies {
-	  implementation 'com.github.bigdongdong:RadarView:1.1' //添加依赖
+	  implementation 'com.github.bigdongdong:RadarView:1.5' //添加依赖
   }
 ```
 
