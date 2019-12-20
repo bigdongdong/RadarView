@@ -1,4 +1,4 @@
-# RadarView
+	# RadarView
 雷达图控件
 <br>
 
@@ -94,4 +94,7 @@
 
         //添加一条数据线，（可以添加多条数据，设置每条数据的样式）
         radarView.addLine(options,values);
+
+        //将radarView添加进父布局
+        parentView.addView(radarView);
 ```
