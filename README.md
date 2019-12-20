@@ -1,8 +1,8 @@
 # RadarView
 雷达图控件
 <br>
-<img  width = "200" src = "images/0.png"></img>
-<img  width = "200" src = "images/11.png"></img>
+<img  width = "200" src = "images/0.jpg"></img>
+<img  width = "200" src = "images/11.jpg"></img>
 <img  width = "200" src = "images/12.jpg"></img>
 <img  width = "200" src = "images/13.jpg"></img>
 
