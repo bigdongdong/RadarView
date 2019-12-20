@@ -1,4 +1,4 @@
-package com.cxd.moudle_radarview.options;
+package com.cxd.radarview.options;
 
 public class TextOptions {
     public int textSize ;

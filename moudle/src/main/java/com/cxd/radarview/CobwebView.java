@@ -1,4 +1,4 @@
-package com.cxd.moudle_radarview;
+package com.cxd.radarview;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -8,8 +8,8 @@ import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.Shape;
 import android.view.View;
 
-import com.cxd.moudle_radarview.options.CobwebOptions;
-import com.cxd.moudle_radarview.options.DataLineOptions;
+import com.cxd.radarview.options.CobwebOptions;
+import com.cxd.radarview.options.DataLineOptions;
 
 import java.util.List;
 
