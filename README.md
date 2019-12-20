@@ -1,6 +1,8 @@
 # RadarView
 雷达图控件
 <br>
+
+
 <img  width = "200" src = "images/0.jpg"></img>
 <img  width = "200" src = "images/11.jpg"></img>
 <img  width = "200" src = "images/12.jpg"></img>
@@ -9,11 +11,20 @@
 
 # 原理解析
 **RadarView绘制原理分解：**<br><br>
-<img  width = "200" src = "images/0.jpg"></img>
-<img  width = "200" src = "images/1.jpg"></img>
-<img  width = "200" src = "images/2.jpg"></img>
-<img  width = "200" src = "images/3.jpg"></img>
-
+<img  width = 200 src = "images/0.jpg"></img>
+<img  width = 200 src = "images/1.jpg"></img>
+<img  width = 200 src = "images/2.jpg"></img>
+<img  width = 200 src = "images/3.jpg"></img>
+<br>
+<!--<table border="0">
+	<tr class = "img_border" width = 800>
+		<td width = 200  style = "text-align: center;">例图</td>
+		<td width = 200  style = "text-align: center;">例图</td>
+		<td width = 200  style = "text-align: center;">例图</td>
+		<td width = 200  style = "text-align: center;">例图</td>
+	</tr>
+</table>
+-->
 # 项目配置
 
 ```
