@@ -6,6 +6,14 @@
 <img  width = "200" src = "images/12.jpg"></img>
 <img  width = "200" src = "images/13.jpg"></img>
 
+
+# 原理解析
+**RadarView绘制原理分解：**<br><br>
+<img  width = "200" src = "images/0.jpg"></img>
+<img  width = "200" src = "images/1.jpg"></img>
+<img  width = "200" src = "images/2.jpg"></img>
+<img  width = "200" src = "images/3.jpg"></img>
+
 # 项目配置
 
 ```
