@@ -27,7 +27,7 @@ import java.util.List;
  * create by cxd on 2020/5/9
  * 雷达图View
  *
- * 相较于旧版{@link com.cxd.radarview}:
+ * 相较于旧版{@link com.cxd.radarview.RadarView}:
  * 优化了绘制方式，大大提高了效率
  * 优化了UI适配
  * 优化了使用方式
