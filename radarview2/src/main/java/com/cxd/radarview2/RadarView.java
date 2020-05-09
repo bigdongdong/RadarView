@@ -36,7 +36,6 @@ import java.util.List;
  */
 @SuppressLint("DrawAllocation")
 public class RadarView extends View {
-    private final String TAG = "RadarView" ;
     private Context mContext ;
     private Builder mBuilder ;
     private Point[][] mPoints;
@@ -82,8 +81,8 @@ public class RadarView extends View {
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
-        mWidth = getMeasuredWidth();
-        mHeight = getMeasuredHeight();
+        mHeight = mWidth = getMeasuredWidth();
+        getLayoutParams().height = mWidth ;  //强制设置高度
 
         final float angle = (float)360 / mPetal ;
 
@@ -111,8 +110,6 @@ public class RadarView extends View {
 
         /*蛛网瓣长*/
         mPetalLenght = mHeight / 2 - (mPadding + textSpace ) ;
-        Log.i(TAG, "onLayout: "+levelHeight);
-        Log.i(TAG, "onLayout: "+mPetalLenght);
     }
 
     @Override
