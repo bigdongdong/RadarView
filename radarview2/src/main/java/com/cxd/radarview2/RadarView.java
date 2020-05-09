@@ -110,7 +110,9 @@ public class RadarView extends View {
         }
 
         /*蛛网瓣长*/
-        mPetalLenght = mHeight / 2 - (mPadding + textSpace + sp2px(mBuilder.textOptions.textSize)) ;
+        mPetalLenght = mHeight / 2 - (mPadding + textSpace ) ;
+        Log.i(TAG, "onLayout: "+levelHeight);
+        Log.i(TAG, "onLayout: "+mPetalLenght);
     }
 
     @Override
@@ -171,7 +173,7 @@ public class RadarView extends View {
 
         /*绘制文字*/
         for (int i = 0; i < mPetal; i++) {
-            if(mBuilder.textOptions.texts.length <= i){
+            if(mBuilder.textOptions.texts == null || mBuilder.textOptions.texts.length <= i){
                 break;
             }
             Path ph = new Path();

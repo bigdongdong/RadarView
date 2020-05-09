@@ -3,9 +3,11 @@ package com.cxd.radarview_demo;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Build;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
@@ -35,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
     /*生成掌盟的雷达图*/
     private RadarView generateRadarView(){
-        int petal = 20 ;
+        final int petal = 20 ;
         /*文字样式*/
         TextOptions textOptions = new TextOptions.Builder()
                 .textColor(Color.GRAY)
                 .textSize(12)
                 .isBold(true)
-                .texts(new String[]{"击杀","生存","助攻", "理物","魔法","防御","金钱"})
+//                .texts(new String[]{"击杀","生存","助攻", "理物","魔法","防御","金钱"})
                 .build();
         /*蛛网填充颜色*/
         int[] colors = new int[]{Color.parseColor("#2b898e"),
@@ -53,14 +55,14 @@ public class MainActivity extends AppCompatActivity {
         CobwebOptions cobwebOptions = new CobwebOptions.Builder()
                 .petal(petal)
                 .silkWidth(2)
-                .silkColor(Color.BLACK)
-                .level(100)
+                .silkColor(Color.GRAY)
+                .level(5)
                 .fillStyle(CobwebOptions.FillStyle.LADDER)
                 .fillColors(colors)
                 .build();
 
         /*生成雷达控件*/
-        RadarView radarView = new RadarView.Builder()
+        final RadarView radarView = new RadarView.Builder()
                 .context(this)
                 .textOptions(textOptions)
                 .cobwebOptions(cobwebOptions)
@@ -74,26 +76,43 @@ public class MainActivity extends AppCompatActivity {
         float[] values = new float[petal];
         float[] values2 = new float[petal];
         for(int i = 0 ; i < values.length ; i++){
-            values[i] = (float) Math.max(50,Math.random() * 100);
+//            values[i] = (float) Math.max(50,Math.random() * 100);
+            values[i] = 90;
             values2[i] = (float) Math.max(50,Math.random() * 100);
-            Log.i("RadarView", "generateRadarView: = "+values[i]);
+            Log.i("RadarView", "generateRadarView: = "+values2[i]);
         }
 
 
         //添加一条数据线
-        Paint p = new Paint();
+        final Paint p = new Paint();
         p.setStyle(Paint.Style.FILL);
         p.setColor(Color.parseColor("#5011ffff"));
+        p.setAntiAlias(true);
         p.setStrokeWidth(3);
         radarView.addLine(values,p);
 
-        Paint p2 = new Paint();
+        final Paint p2 = new Paint();
         p2.setStyle(Paint.Style.STROKE);
         p2.setColor(Color.RED);
         p2.setStrokeWidth(3);
+        p2.setAntiAlias(true);
         radarView.addLine(values2,p2);
 
-//        radarView.removeLines();
+        radarView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                radarView.removeLines();
+
+                final float[] values = new float[petal];
+                final float[] values2 = new float[petal];
+                for(int i = 0 ; i < values2.length ; i++){
+                    values[i] = (float) Math.max(30,Math.random() * 100);
+                    values2[i] = (float) Math.max(30,Math.random() * 100);
+                }
+                radarView.addLine(values,p);
+                radarView.addLine(values2,p2);
+            }
+        });
 
         return radarView ;
     }
