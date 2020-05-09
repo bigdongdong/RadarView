@@ -16,7 +16,7 @@ import com.cxd.radarview.options.TextOptions;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@Deprecated
 public class RadarView extends RelativeLayout {
     private CobwebOptions cobwebOptions ;
     private TextOptions textOptions ;

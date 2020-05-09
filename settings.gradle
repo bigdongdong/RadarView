@@ -1,2 +1,2 @@
-include ':app', ':moudle'
+include ':app', ':radarview', ':radarview2'
 rootProject.name='RadarView'

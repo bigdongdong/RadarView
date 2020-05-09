@@ -1,5 +1,6 @@
 package com.cxd.radarview.options;
 
+@Deprecated
 public class CobwebOptions {
     public int silkWidth ;
     public int silkColor ;

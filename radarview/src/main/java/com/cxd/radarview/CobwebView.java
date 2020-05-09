@@ -13,6 +13,7 @@ import com.cxd.radarview.options.DataLineOptions;
 
 import java.util.List;
 
+@Deprecated
 public class CobwebView extends View {
     public CobwebOptions cobwebOptions ;
     public Float cobwebCanvasScale ;

@@ -1,5 +1,6 @@
 package com.cxd.radarview.options;
 
+@Deprecated
 public class DataLineOptions {
     public int lineWidth ;
     public int lineColor ;
