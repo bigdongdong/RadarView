@@ -15,6 +15,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.GradientDrawable;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 
 import com.cxd.radarview2.options.CobwebOptions;
 import com.cxd.radarview2.options.TextOptions;
@@ -44,7 +45,7 @@ public class RadarView extends View {
     private int mLevel ;
     private int mPadding ;
     private int mWidth ;
-    private int mHeight ;
+    private int mHeight ; //这里的高等于宽，不是View的高
     private Paint mTextPaint ;
     private Paint mCobwebPaint ;
     private int mPetalLenght ;
@@ -82,7 +83,6 @@ public class RadarView extends View {
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
         mHeight = mWidth = getMeasuredWidth();
-        getLayoutParams().height = mWidth ;  //强制设置高度
 
         final float angle = (float)360 / mPetal ;
 
