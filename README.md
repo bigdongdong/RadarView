@@ -1,3 +1,6 @@
+#以下为老版1.5 <br>
+#新版请参考demo  <br>
+
 # RadarView
 雷达图控件
 <br>
